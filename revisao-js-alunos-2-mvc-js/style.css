@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Estilo para o botão Alunos */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Estilo para o cabeçalho da página */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para os campos de entrada Nome e Código */
+input {
+    font-size: 16px;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para a listagem de alunos */
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
