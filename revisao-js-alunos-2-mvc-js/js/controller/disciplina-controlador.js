@@ -15,15 +15,15 @@ class DisciplinaControlador {
         const elementoP = document.createElement("p");
         elementoP.textContent = `${nome} - ${codigo}`;
 
-        const elementoBotaoApagar = document.createElement("button");
-        elementoBotaoApagar.textContent = "X";
+        const BotaoApaga = document.createElement("button");
+        BotaoApaga.textContent = "X";
 
-        elementoBotaoApagar.addEventListener('click', (event) => {
+        BotaoApaga.addEventListener('click', (event) => {
                 this.removerDisciplinaDaLista(codigo);
                 event.target.parentElement.remove();
             }
         );
-        elementoP.appendChild(elementoBotaoApagar);
+        elementoP.appendChild(BotaoApaga);
         document.body.appendChild(elementoP);
     }
 

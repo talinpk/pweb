@@ -9,10 +9,10 @@ class DisciplinaRepositorio {
     }
 
     remover(codigo) {
-        const indxRemocao = this._disciplinas.indexOf(disciplina => disciplina.codigo === codigo);
-        console.log(indxRemocao);
-        
-        this._disciplinas.splice(indxRemocao, 1);
+        const Removert = this._disciplinas.indexOf(disciplina => disciplina.codigo === codigo);
+        console.log(Removert);
+
+        this._disciplinas.splice(Removert, 1);
 
     }
 

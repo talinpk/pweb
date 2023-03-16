@@ -9,8 +9,8 @@ class AlunoRepositorio {
     }
 
     remover(nome) {
-        const indxRemocao = this._alunos.indexOf(aluno => aluno.nome === nome);
-        this._alunos.splice(indxRemocao, 1);
+        const Removert = this._alunos.indexOf(aluno => aluno.nome === nome);
+        this._alunos.splice(Removert, 1);
     }
 
     listar() {
