@@ -1,21 +1,17 @@
 class DisciplinaControlador {
     constructor() {
-        this.DisciplinaServico = new DisciplinaServico();
+        this.disciplinaServico = new DisciplinaServico();
     }
 
     inserir() {
         const nomeDisciplina = document.querySelector("#nome").value;
         const codigoDisciplina = Number(document.querySelector("#codigo").value);
-        const disciplina = this.DisciplinaServico.inserir(nomeAluno, idadeAluno);
-        if (disciplina) {
-            this.mostrarAlunoNoHTML(nomeDisciplina, codigoDisciplina);
-            alert('Disciplina inserida com sucesso!');
-        } else {
-            alert('Esse código já existe!')
-        }
+        const disciplina = this.disciplinaServico.inserir(codigoDisciplina, nomeDisciplina);
+        this.mostrarDisciplinaNoHTML(nomeDisciplina, codigoDisciplina);
+        alert('Disciplina inserida com sucesso!');
     }
         
-    mostrarAlunoNoHTML(nome, codigo) {
+    mostrarDisciplinaNoHTML(nome, codigo) {
         const elementoP = document.createElement("p");
         elementoP.textContent = `${nome} - ${codigo}`;
 

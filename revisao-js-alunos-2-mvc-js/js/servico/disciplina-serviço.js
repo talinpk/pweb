@@ -1,14 +1,11 @@
 class DisciplinaServico {
     constructor() {
-        this._repositorio = new DisciplinaRepositorio();
+        this.repositorio = new DisciplinaRepositorio();
     }
 
     inserir(codigo, nome) {
-        if(this.buscarPorCodigo(codigo).length > 0); {
-           const disciplina = new Disciplina(codigo, nome);
-           return this._repositorio.inserir(disciplina);
-        }
-        return undefined;
+        const disciplina = new Disciplina(codigo, nome);
+        return this.repositorio.inserir(disciplina); 
     }
 
     remover(codigo) {
@@ -22,4 +19,5 @@ class DisciplinaServico {
     buscarPorCodigo(codigo) {
         return this.repositorio.buscarPorCodigo(codigo);
     }
+
 }
