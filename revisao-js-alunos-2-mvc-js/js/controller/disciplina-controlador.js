@@ -8,7 +8,7 @@ class DisciplinaControlador {
         const codigoDisciplina = Number(document.querySelector("#codigo").value);
         const disciplina = this.disciplinaServico.inserir(codigoDisciplina, nomeDisciplina);
         this.mostrarDisciplinaNoHTML(nomeDisciplina, codigoDisciplina);
-        alert('Disciplina inserida com sucesso!');
+        alert('Disciplina adicionada!');
     }
         
     mostrarDisciplinaNoHTML(nome, codigo) {
